@@ -1,0 +1,423 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FDF3E7;
+    color: #65473D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #C2D54C;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+
+.topNav, .leftContextNav, .footerLeft, .footerMiddel, .footerRight {
+    display: none;
+}
+
+.headerLogo {
+    width: 150px;
+    position: fixed;
+    top: -35px;
+    left: -17px;
+}
+
+.headerBtn {
+    background-color: #9fad41;
+    width: 34px;
+    height: 34px;
+}
+
+#headerBtnSearch {
+    position: fixed;
+    top: 7px;
+    right: 57px;
+}
+
+#headerBtnLogin {
+    position: fixed;
+    top: 7px;
+    right: 94px;
+}
+
+.headerBtn img {
+    width: 90%;
+    margin: 5%;
+}
+
+.burderBar {
+    width: 50px;
+    position: fixed;
+    top: -1px;
+    right: 5px;
+}
+
+#myLinksFindOs, #myLinksBrugOs, #myLinksMiniBib, #myLinksMitBib, #myLinksForside, #myLinks {
+    display: none;
+}
+
+.links {
+    background-color: #9fad41;
+    margin-top: 50px;
+  }
+
+.links a {
+      display: inline-table;
+      text-decoration: none;
+      color: #65473D;
+      font-weight: bold;
+      font-size: 25px;
+}
+
+.links li {
+    padding: 0;
+    list-style: none;
+    margin-left: -20%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    border-bottom: 1px solid #65473D;
+}
+
+.links li:hover {
+    background-color: #C2D54C;
+}
+
+#mySearch, #myLogIn{
+    display: none;
+    background-color: #9fad41;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#mySearch {
+    height: 41px;
+    border-bottom: 1px solid #65473D;
+}
+
+#logInWrapper {
+    display: grid;
+    place-items: center;
+}
+
+#myLogIn div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#loginbtn {
+    background-color: #C2D54C;
+}
+
+input {
+    height: 34px;
+    border: 1px solid #65473D;
+    color: #65473D;
+    background-color: #FDF3E7;
+}
+
+#searchWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+#myLogIn div label {
+    display: block;
+}
+
+
+
+
+.mainContent {
+    margin-top: 50px;
+    padding: 15px;
+}
+
+
+
+
+footer {
+    background-color: #C2D54C;
+    height: 100px;
+    overflow: hidden;
+}
+
+.footerImg {
+    width: 200px;
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+
+
+/*FOOTER*/
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #9fad41;
+  color: #65473D;
+  font-size: 20px;
+  padding-left: 0px;
+  border: solid 0.1rem #65473D;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 34px;
+  height: 34px;
+}
+
+#chatIcon {
+    width: 32px;
+}
+
+.open-button:active {
+    background-color: #C2D54C;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border: 1px solid #65473D;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 10px;
+  background-color: #C2D54C;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 5px 0px;
+  border: none;
+  background: #9fad41;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #FDF3E7;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #9fad41;
+  color: #65473D;
+  font-size: 20PX;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  box-shadow: 0 5px #65473D ;
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 80%;
+}
+
+.form-container .btn:active, .open-button:active {
+    background-color: #C2D54C;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+
+/*DOWNLOAD_APP*/
+.download {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 110px;
+    }
+
+    .headerLogo {
+        width: 300px;
+        position: fixed;
+        left: -40px;
+        top: -72px;
+    }
+    
+    .headerBtn {
+        background-color: #9fad41;
+        width: 34px;
+        height: 34px;
+    }
+    
+    #headerBtnSearch {
+        display: inline-block;
+        position: fixed;
+        top: 30px;
+        right: 65px;
+        height: 45px;
+        width: 45px;
+    }
+    
+    #headerBtnLogin {
+        display: inline-block;
+        position: fixed;
+        top: 30px;
+        right: 10px;
+        height: 45px;
+        width: 45px;
+    }
+    
+    .burderBar {
+        display: none;
+    }
+
+    .topNav {
+        display: inline-block;
+        position: fixed;
+        top: 20px;
+        left: 230px;
+    }
+    
+    .topNav ul {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        list-style: none;
+    }
+    
+    .topNav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 17px;
+        font-weight: bolder;
+    }
+    
+    .headerIkon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+    }
+    .topNavHover {
+        text-decoration: none;
+        color: #65473D;
+    }
+    
+    .topNavHover:hover {
+        opacity: 80%;
+        border-bottom: 3px solid #65473D;
+    }
+
+    .mainContent {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+
+    .leftContextNav {
+        display: block;
+        position: fixed;
+        left: 0px;
+        top: 120px;
+        bottom: 65px;
+        width: 200px;
+        border-right: 3px solid #65473D;
+        background-color: #FDF3E7;
+    }
+
+    .leftContextNav li{
+        list-style: none;
+        font-weight: bold;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #65473D;
+        text-decoration: none;
+    }
+
+    .mainContent {
+        margin-left: 230px;
+        margin-top: 120px;
+        margin-right: 20px;
+    }
+
+    footer {
+        background-color: #FDF3E7;
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        right: 10px;
+        left: 10px;
+        height: 50px;
+        border-top: 3px solid #65473D;
+    }
+
+.footerImg {
+    display: none;
+}
+
+.footerLeft {
+    display: block;
+    position: fixed;
+    left: 15px;
+    bottom: 3px;
+}
+
+.footerMiddel {
+    display: block;
+    position: fixed;
+    left: 45%;
+    bottom: -5px;
+    font-size: 11px;
+}
+
+.footerRight {
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 3px;
+}
+
+#knapFooter {
+    background-color: #C2D54C;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.knapIkoner {
+    max-width: 35px;
+    max-height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-button {
+    bottom: 3px;;
+}

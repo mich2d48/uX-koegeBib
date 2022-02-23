@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./img/kopi-05.png">
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/logo/bruntLogo/logoBrunt.png" alt="Logo, Roskilde Bibliotek" class="headerLogo"></a>
+        <a href="javascript:void(0);" onclick="searchFunction()"><button class="headerBtn" id="headerBtnSearch"><img src="./img/ikoner/guideIkoner/find.png" alt="søgefelt"></button></a>
+        <a href="javascript:void(0);" onclick="logInFunction()"><button class="headerBtn" id="headerBtnLogin"><img src="./img/ikoner/guideIkoner/logInd.png" alt="log ind"></button></a>
+        <a href="javascript:void(0);" onclick="myFunction()"><img src="./img/ikoner/guideIkoner/burger.png" alt="burgermenu" class="burderBar"></a>
+     <div class="links" id="myLinks">
+        <ul>
+            <li><a href="javascript:void(0);" onclick="forsideMenuFunction()">Forside</a></li>
+            <li><a href="javascript:void(0);" onclick="mitBibMenuFunction()">MitBib</a></li>
+            <li><a href="javascript:void(0);" onclick="miniBibMenuFunction()">MiniBib</a></li>
+            <li><a href="javascript:void(0);" onclick="brugOsMenuFunction()">Brug os</a></li>
+            <li><a href="javascript:void(0);" onclick="findOsMenuFunction()">Find os</a></li>
+        </ul>
+    </div>   
+    <div id="mySearch">
+        <div id="searchWrapper">
+            <input type="search" placeholder="Søg og find...">
+            <button class="headerBtn"><img src="./img/ikoner/guideIkoner/find.png" alt=""></button>
+        </div>
+    </div> 
+    <div id="myLogIn">
+        <div id="logInWrapper">
+            <div>
+                <label for="fname">Brugernavn:</label>
+                <input type="search" placeholder="KøgeBib...">
+            </div>    
+            <div>
+                <label for="lname">Kodeord:</label>
+                <input type="search" placeholder="4600...">
+            </div>
+            <div>
+                <input type="submit" value="Log Ind" id="loginbtn"> 
+            </div> 
+        </div>   
+    </div> 
+   <div class="links" id="myLinksForside" id="sideNavForside">
+        <ul>
+            <li><a href="./index.html">Forside</a></li>
+            <li><a href="./index.html">Overskrift2</a></li>
+            <li><a href="./index.html">Overskrift3</a></li>
+            <li><a href="./index.html">Overskrift4</a></li>
+            <li><a href="./index.html">Overskrift5</a></li>
+            <li><a href="./index.html">Overskrift6</a></li>
+            <li><a href="./index.html">Overskrift7</a></li>
+            <li><a href="./index.html">Overskrift8</a></li>
+            <li><a href="./index.html">Overskrift9</a></li>
+        </ul>
+    </div> 
+    <div class="links" id="myLinksMitBib">
+        <ul>
+            <li><a href="./mitBib.html">MitBib</a></li>
+            <li><a href="./mitBib.html">Overskrift2</a></li>
+            <li><a href="./mitBib.html">Overskrift3</a></li>
+            <li><a href="./mitBib.html">Overskrift4</a></li>
+            <li><a href="./mitBib.html">Overskrift5</a></li>
+            <li><a href="./mitBib.html">Overskrift6</a></li>
+            <li><a href="./mitBib.html">Overskrift7</a></li>
+            <li><a href="./mitBib.html">Overskrift8</a></li>
+            <li><a href="./mitBib.html">Overskrift9</a></li>
+        </ul>
+    </div> 
+    <div class="links" id="myLinksMiniBib">
+        <ul>
+            <li><a href="./miniBib.html">MiniBib</a></li>
+            <li><a href="./miniBib.html">Overskrift2</a></li>
+            <li><a href="./miniBib.html">Overskrift3</a></li>
+            <li><a href="./miniBib.html">Overskrift4</a></li>
+            <li><a href="./miniBib.html">Overskrift5</a></li>
+            <li><a href="./miniBib.html">Overskrift6</a></li>
+            <li><a href="./miniBib.html">Overskrift7</a></li>
+            <li><a href="./miniBib.html">Overskrift8</a></li>
+            <li><a href="./miniBib.html">Overskrift9</a></li>
+        </ul>
+    </div> 
+    <div class="links" id="myLinksBrugOs">
+        <ul>
+            <li><a href="./brugOs.html">BrugOs</a></li>
+            <li><a href="./brugOs.html">Overskrift2</a></li>
+            <li><a href="./brugOs.html">Overskrift3</a></li>
+            <li><a href="./brugOs.htmlt">Overskrift4</a></li>
+            <li><a href="./brugOs.html">Overskrift5</a></li>
+            <li><a href="./brugOs.html">Overskrift6</a></li>
+            <li><a href="./brugOs.html">Overskrift7</a></li>
+            <li><a href="./brugOs.html">Overskrift8</a></li>
+            <li><a href="./brugOs.html">Overskrift9</a></li>
+        </ul>
+    </div> 
+    <div class="links" id="myLinksFindOs">
+        <ul>
+            <li><a href="./findOs.html">FindOs</a></li>
+            <li><a href="./findOs.html">Overskrift2</a></li>
+            <li><a href="./findOs.html">Overskrift3</a></li>
+            <li><a href="./findOs.html">Overskrift4</a></li>
+            <li><a href="./findOs.html">Overskrift5</a></li>
+            <li><a href="./findOs.html">Overskrift6</a></li>
+            <li><a href="./findOs.html">Overskrift7</a></li>
+            <li><a href="./findOs.html">Overskrift8</a></li>
+        </ul>
+    </div> 
+    <div class="topNav">
+        <ul>
+            <li><a href="./index.html" class="topNavHover" id="duErher"><img src="./img/ikoner/topNavIkoner/forside.png" alt="forside ikon" class="headerIkon">Forside</a></li>
+            <li><a href="./mitBib.html" class="topNavHover"><img src="./img/ikoner/topNavIkoner/ikonMitBib.png" alt="forside ikon" class="headerIkon">MitBib</a></li>
+            <li><a href="./miniBib.html" class="topNavHover"><img src="./img/ikoner/topNavIkoner/ikonMiniBib.png" alt="forside ikon" class="headerIkon">MiniBib</a></li>
+            <li><a href="./brugOs.html" class="topNavHover"><img src="./img/ikoner/topNavIkoner/brugOs.png" alt="forside ikon" class="headerIkon">Besøg os</a></li>
+            <li><a href="./findOs.html" class="topNavHover"><img src="./img/ikoner/topNavIkoner/findOs.png" alt="forside ikon" class="headerIkon">Find os</a></li>
+        </ul>
+    </div>
+    </header>
+    <div class="leftContextNav">
+        <ul>
+            <li><a href="./index.html">Overskrift1</a></li>
+            <li><a href="./index.html">Overskrift2</a></li>
+            <li><a href="./index.html">Overskrift3</a></li>
+            <li><a href="./index.html">Overskrift4</a></li>
+            <li><a href="./index.html">Overskrift5</a></li>
+            <li><a href="./index.html">Overskrift6</a></li>
+            <li><a href="./index.html">Overskrift7</a></li>
+            <li><a href="./index.html">Overskrift8</a></li>
+            <li><a href="./index.html">Overskrift9</a></li>
+        </ul>
+    </div>
+    <section class="mainContent">
+        <h1>Forside</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iure illo ullam modi temporibus distinctio cupiditate assumenda accusantium dicta quia repellendus, laborum odit, reiciendis minus voluptates illum tempore nihil error</p>
+        <h1>Overskrift2</h1>
+        <p>eius laborum quia doloribus, repellat unde odio iusto pariatur vitae maiores possimus optio ut, reiciendis ex tempore sit. Iste id obcaecati nulla, vel eius odit aliquam corrupti praesentium, iure sapiente quaerat? Rerum ut mollitia</p>
+        <h1>Overskrift3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iure illo ullam modi temporibus distinctio cupiditate assumenda accusantium dicta quia repellendus, laborum odit, reiciendis minus voluptates illum tempore nihil error</p>
+        <h1>Overskrift4</h1>
+        <p>eius laborum quia doloribus, repellat unde odio iusto pariatur vitae maiores possimus optio ut, reiciendis ex tempore sit. Iste id obcaecati nulla, vel eius odit aliquam corrupti praesentium, iure sapiente quaerat? Rerum ut mollitia</p>
+        <h1>Overskrif5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iure illo ullam modi temporibus distinctio cupiditate assumenda accusantium dicta quia repellendus, laborum odit, reiciendis minus voluptates illum tempore nihil error</p>
+        <h1>Overskrift6</h1>
+        <p>eius laborum quia doloribus, repellat unde odio iusto pariatur vitae maiores possimus optio ut, reiciendis ex tempore sit. Iste id obcaecati nulla, vel eius odit aliquam corrupti praesentium, iure sapiente quaerat? Rerum ut mollitia</p>
+        <h1>Overskrift7</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iure illo ullam modi temporibus distinctio cupiditate assumenda accusantium dicta quia repellendus, laborum odit, reiciendis minus voluptates illum tempore nihil error</p>
+        <h1>Overskrift8</h1>
+        <p>eius laborum quia doloribus, repellat unde odio iusto pariatur vitae maiores possimus optio ut, reiciendis ex tempore sit. Iste id obcaecati nulla, vel eius odit aliquam corrupti praesentium, iure sapiente quaerat? Rerum ut mollitia</p>
+        <h1>Overskrift9</h1>
+        <p>eius laborum quia doloribus, repellat unde odio iusto pariatur vitae maiores possimus optio ut, reiciendis ex tempore sit. Iste id obcaecati nulla, vel eius odit aliquam corrupti praesentium, iure sapiente quaerat? Rerum ut mollitia</p>
+    </section>
+
+    <footer>
+        <img src="./img/logo/bruntLogo/logoBrunt.png" alt="køge bibliotek logo" class="footerImg">
+
+        <div class="footerLeft">
+            <a href="https://www.facebook.com/koegebib"><button id="knapFooter"><img src="./img/ikoner/SoMeIkoner/fb.png" alt="" class="knapIkoner"></button></a>
+            <a href="https://www.instagram.com/koegebibliotekerne/"><button id="knapFooter"><img src="./img/ikoner/SoMeIkoner/in.png" alt="" class="knapIkoner"></button></a>
+            <a href="./app.html"><button id="knapFooter"><img src="./img/ikoner/SoMeIkoner/app.png" alt="" class="knapIkoner"></button></a>
+        </div>
+        <div class="footerMiddel">
+            <p>Køge@mail.com</p>
+            <p>Tlf: 1234 5678</p>
+        </div>
+
+        <div>
+            <button class="open-button" id="knapFooter" onclick="openForm()"><img src="./img/ikoner/guideIkoner/chatWithMe.png" alt="chat ikon" id="chatIcon"></button>
+
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Velkommen til Køge Bibliotekerne!</h1>
+
+                    <label for="msg"><b>Hvad kan vi hjælpe dig med? Vi bestræber os på at svare så hurtigt vi kan komme til det!</b></label>
+                    <textarea placeholder="Skriv dit spørgsmål her..." name="msg" required></textarea>
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
+                </form>
+            </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
